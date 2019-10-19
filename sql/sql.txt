@@ -1,0 +1,5 @@
+    
+       INSERT INTO `output` (`page`, `counts`) 
+      (SELECT "HOME_PAGE" ,SUM(home_page) FROM `input`),
+      (SELECT "PRODUCT_PAGE",SUM(product_page) FROM `input`),
+      (SELECT "warranty_page",SUM(warranty_page) FROM `input`);
