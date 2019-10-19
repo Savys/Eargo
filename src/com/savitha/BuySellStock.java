@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class BuySellStock {
 
-	public static void main(String[] args) {	
-		//int[] price = { 3, 8, 8, 55, 38, 10, 7, 42, 2, 1 };
-
-		System.out.println("Please enter the no of dayss of stock prices:");
+	public static void main(String[] args) {			
+		//int[] price = { 3, 8, 8, 55, 38, 1, 7, 42, 54, 53 };
+		System.out.println("Please enter the no of days of stock prices:");
 		Scanner in = new Scanner(System.in); 
 		int count = in.nextInt(); 
+		System.out.println("Please enter stock prices:");
 		int[] price = new int[count]; 
 		Scanner numScanner = new Scanner(System.in);
 		for (int i = 0; i < count; i++) { 
@@ -53,7 +53,7 @@ public class BuySellStock {
 		  
 		  @Override
 		  public String toString() {
-		    return "Trade [BestBuyDay=" + buyDay + ", SellDay=" + sellDay + ", maxprofit=" + maxProfit +"$" + "]";
+		    return "Buying Day=" +"Day "+ buyDay + ", Selling Day=" +"Day " +sellDay + ", Total gain=" + "$"+maxProfit  + "";
 		  }
 		  public int getBuyDay() {
 		    return buyDay;
